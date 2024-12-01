@@ -44,27 +44,27 @@
             // 
             txtUserName.Location = new Point(152, 43);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(100, 23);
+            txtUserName.Size = new Size(276, 23);
             txtUserName.TabIndex = 0;
             // 
             // txtRepeatPassword
             // 
-            txtRepeatPassword.Location = new Point(152, 141);
+            txtRepeatPassword.Location = new Point(151, 143);
             txtRepeatPassword.Name = "txtRepeatPassword";
-            txtRepeatPassword.Size = new Size(100, 23);
+            txtRepeatPassword.Size = new Size(277, 23);
             txtRepeatPassword.TabIndex = 1;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(152, 92);
+            txtPassword.Location = new Point(151, 94);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(100, 23);
+            txtPassword.Size = new Size(277, 23);
             txtPassword.TabIndex = 2;
             // 
             // chkShowPassword
             // 
             chkShowPassword.AutoSize = true;
-            chkShowPassword.Location = new Point(274, 94);
+            chkShowPassword.Location = new Point(434, 99);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(60, 19);
             chkShowPassword.TabIndex = 3;
@@ -75,7 +75,7 @@
             // chkShowRepeatPassword
             // 
             chkShowRepeatPassword.AutoSize = true;
-            chkShowRepeatPassword.Location = new Point(274, 145);
+            chkShowRepeatPassword.Location = new Point(434, 147);
             chkShowRepeatPassword.Name = "chkShowRepeatPassword";
             chkShowRepeatPassword.Size = new Size(60, 19);
             chkShowRepeatPassword.TabIndex = 4;
@@ -86,7 +86,7 @@
             // lblUserName
             // 
             lblUserName.AutoSize = true;
-            lblUserName.Location = new Point(51, 51);
+            lblUserName.Location = new Point(70, 46);
             lblUserName.Name = "lblUserName";
             lblUserName.Size = new Size(76, 15);
             lblUserName.TabIndex = 5;
@@ -95,7 +95,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(51, 100);
+            label2.Location = new Point(112, 99);
             label2.Name = "label2";
             label2.Size = new Size(33, 15);
             label2.TabIndex = 6;
@@ -104,7 +104,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(51, 149);
+            label3.Location = new Point(74, 146);
             label3.Name = "label3";
             label3.Size = new Size(71, 15);
             label3.TabIndex = 7;
@@ -112,7 +112,7 @@
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(152, 187);
+            btnRegister.Location = new Point(151, 190);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(75, 23);
             btnRegister.TabIndex = 8;
@@ -122,7 +122,7 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(152, 229);
+            btnCancel.Location = new Point(353, 190);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(75, 23);
             btnCancel.TabIndex = 9;
@@ -134,7 +134,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(546, 247);
             Controls.Add(btnCancel);
             Controls.Add(btnRegister);
             Controls.Add(label3);
@@ -145,7 +145,10 @@
             Controls.Add(txtPassword);
             Controls.Add(txtRepeatPassword);
             Controls.Add(txtUserName);
+            MaximumSize = new Size(562, 286);
+            MinimumSize = new Size(562, 286);
             Name = "RegisterForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RegisterForm";
             Load += RegisterForm_Load;
             ResumeLayout(false);

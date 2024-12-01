@@ -30,7 +30,36 @@ namespace RecordStoreManagerModule
 
         private void LoadAlbums()
         {
+            LoadAllAlbums();
+            LoadNotOnSaleAlbums();
+            LoadOnSaleAlbums();
+            LoadLastTenAlbums();
+            LoadDiscountedAlbums();
+        }
+
+        private void LoadAllAlbums()
+        {
             dgvAlbums.DataSource = _albumService.GetAll();
+        }
+
+        private void LoadNotOnSaleAlbums()
+        {
+            dgvNotOnSale.DataSource = _albumService.GetNotOnSaleAlbums();
+        }
+
+        private void LoadOnSaleAlbums()
+        {
+            dgvOnSale.DataSource = _albumService.GetOnSaleAlbums();
+        }
+
+        private void LoadLastTenAlbums()
+        {
+            dgvLastTen.DataSource = _albumService.GetLastTenAlbums();
+        }
+
+        private void LoadDiscountedAlbums()
+        {
+            dgvDiscount.DataSource = _albumService.GetDiscountedAlbums();
         }
 
         private void btnSave_Click(object sender, EventArgs e)

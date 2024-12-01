@@ -41,7 +41,7 @@
             // 
             txtUserName.Location = new Point(106, 30);
             txtUserName.Name = "txtUserName";
-            txtUserName.Size = new Size(142, 23);
+            txtUserName.Size = new Size(175, 23);
             txtUserName.TabIndex = 0;
             txtUserName.Text = "Test";
             // 
@@ -56,7 +56,7 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(116, 122);
+            btnLogin.Location = new Point(106, 114);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(75, 23);
             btnLogin.TabIndex = 2;
@@ -67,7 +67,7 @@
             // lnkRegister
             // 
             lnkRegister.AutoSize = true;
-            lnkRegister.Location = new Point(121, 162);
+            lnkRegister.Location = new Point(219, 118);
             lnkRegister.Name = "lnkRegister";
             lnkRegister.Size = new Size(62, 15);
             lnkRegister.TabIndex = 3;
@@ -78,7 +78,7 @@
             // chkShowPassword
             // 
             chkShowPassword.AutoSize = true;
-            chkShowPassword.Location = new Point(267, 78);
+            chkShowPassword.Location = new Point(287, 77);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(60, 19);
             chkShowPassword.TabIndex = 4;
@@ -89,7 +89,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 78);
+            label2.Location = new Point(67, 77);
             label2.Name = "label2";
             label2.Size = new Size(33, 15);
             label2.TabIndex = 6;
@@ -99,7 +99,7 @@
             // 
             txtPassword.Location = new Point(106, 74);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(142, 23);
+            txtPassword.Size = new Size(175, 23);
             txtPassword.TabIndex = 5;
             txtPassword.Text = "ASDasd123+*";
             // 
@@ -107,7 +107,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(392, 167);
             Controls.Add(label2);
             Controls.Add(txtPassword);
             Controls.Add(chkShowPassword);
@@ -115,7 +115,10 @@
             Controls.Add(btnLogin);
             Controls.Add(label1);
             Controls.Add(txtUserName);
+            MaximumSize = new Size(408, 206);
+            MinimumSize = new Size(408, 206);
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += LoginForm_Load;
             ResumeLayout(false);
