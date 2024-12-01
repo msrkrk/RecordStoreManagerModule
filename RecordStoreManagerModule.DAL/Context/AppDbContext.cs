@@ -21,7 +21,7 @@ namespace RecordStoreManagerModule.DAL.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Album>().HasData(
-                 new Album { Id = 1, Name = "Abbey Road", Artist = "The Beatles", ReleaseDate = new DateTime(1969, 9, 26), IsOnSale = true, Discount = 10.0, Price = 19.99M, CreatedDate = new DateTime(2024,12,01) },
+                 new Album { Id = 1, Name = "Abbey Road", Artist = "The Beatles", ReleaseDate = new DateTime(1969, 9, 26), IsOnSale = true, Discount = 10.0, Price = 19.99M, CreatedDate = new DateTime(2024, 12, 01) },
                  new Album { Id = 2, Name = "Thriller", Artist = "Michael Jackson", ReleaseDate = new DateTime(1982, 11, 30), IsOnSale = true, Discount = 15.0, Price = 24.99M, CreatedDate = new DateTime(2024, 12, 01) },
                  new Album { Id = 3, Name = "Back in Black", Artist = "AC/DC", ReleaseDate = new DateTime(1980, 7, 25), IsOnSale = false, Discount = 0.0, Price = 18.99M, CreatedDate = new DateTime(2024, 12, 01) },
                  new Album { Id = 4, Name = "Dark Side of the Moon", Artist = "Pink Floyd", ReleaseDate = new DateTime(1973, 3, 1), IsOnSale = true, Discount = 20.0, Price = 22.99M, CreatedDate = new DateTime(2024, 12, 01) },
@@ -54,5 +54,13 @@ namespace RecordStoreManagerModule.DAL.Context
              );
         }
 
+        public override int SaveChanges()
+        {
+            var result = base.SaveChanges();
+
+            ChangeTracker.Clear();
+
+            return result;
+        }
     }
 }

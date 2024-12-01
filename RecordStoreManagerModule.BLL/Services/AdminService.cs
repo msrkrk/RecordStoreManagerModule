@@ -23,17 +23,15 @@ namespace RecordStoreManagerModule.BLL.Services
             _adminRepository = adminRepository;
         }
 
-        public AdminDto GetAdminByUserName(string userName)
+        public AdminDto? GetAdminByUserName(string userName)
         {
             var admin = _adminRepository.GetAdminByUserName(userName);
-            if (admin == null)
+            if (admin != null)
             {
                 return _mapper.Map<AdminDto>(admin);
             }
-            else
-            {
-                return null;
-            }
+
+            return null;
 
         }
 
@@ -41,7 +39,7 @@ namespace RecordStoreManagerModule.BLL.Services
         {
            var admin = _genericRepository.GetAll().FirstOrDefault(x => x.UserName == username && x.Password == password);
 
-            return _mapper.Map<AdminDto>(username);
+            return _mapper.Map<AdminDto>(admin);
         }
 
         public void Register(AdminDto registerAdminDto)

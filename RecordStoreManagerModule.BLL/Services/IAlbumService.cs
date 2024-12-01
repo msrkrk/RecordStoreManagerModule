@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace RecordStoreManagerModule.BLL.Services
 {
-    public interface IAdminService
+    public interface IAlbumService
     {
-        AdminDto Login(string username, string password);
-
-        void Register(AdminDto registerAdminDto);
-
-        AdminDto? GetAdminByUserName(string userName);
+        List<AlbumDto> GetAll();
+        void Add(AlbumDto album);
+        void Update(AlbumDto album);
+        void Delete(int id);
     }
 }

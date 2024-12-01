@@ -14,6 +14,7 @@ namespace RecordStoreManagerModule.BLL
         public MappingProfiles()
         {
             CreateMap<AdminDto, Admin>().ReverseMap();
+            CreateMap<AlbumDto, Album>().ReverseMap();
         }
     }
 }

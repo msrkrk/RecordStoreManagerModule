@@ -43,6 +43,7 @@
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(142, 23);
             txtUserName.TabIndex = 0;
+            txtUserName.Text = "Test";
             // 
             // label1
             // 
@@ -61,16 +62,18 @@
             btnLogin.TabIndex = 2;
             btnLogin.Text = "GİRİŞ YAP";
             btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // lnkRegister
             // 
             lnkRegister.AutoSize = true;
-            lnkRegister.Location = new Point(129, 170);
+            lnkRegister.Location = new Point(121, 162);
             lnkRegister.Name = "lnkRegister";
             lnkRegister.Size = new Size(62, 15);
             lnkRegister.TabIndex = 3;
             lnkRegister.TabStop = true;
             lnkRegister.Text = "KAYIT OL !";
+            lnkRegister.LinkClicked += lnkRegister_LinkClicked;
             // 
             // chkShowPassword
             // 
@@ -81,6 +84,7 @@
             chkShowPassword.TabIndex = 4;
             chkShowPassword.Text = "Göster";
             chkShowPassword.UseVisualStyleBackColor = true;
+            chkShowPassword.CheckedChanged += chkShowPassword_CheckedChanged;
             // 
             // label2
             // 
@@ -97,6 +101,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(142, 23);
             txtPassword.TabIndex = 5;
+            txtPassword.Text = "ASDasd123+*";
             // 
             // LoginForm
             // 
@@ -112,6 +117,7 @@
             Controls.Add(txtUserName);
             Name = "LoginForm";
             Text = "Form1";
+            Load += LoginForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
