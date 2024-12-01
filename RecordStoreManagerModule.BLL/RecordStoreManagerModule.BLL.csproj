@@ -14,8 +14,4 @@
     <ProjectReference Include="..\RecordStoreManagerModule.DAL\RecordStoreManagerModule.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\" />
-  </ItemGroup>
-
 </Project>

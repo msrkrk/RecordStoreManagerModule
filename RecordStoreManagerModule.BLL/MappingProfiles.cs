@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutoMapper;
+using RecordStoreManagerModule.BLL.Dtos;
+using RecordStoreManagerModule.DAL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +9,11 @@ using System.Threading.Tasks;
 
 namespace RecordStoreManagerModule.BLL
 {
-    internal class MappingProfiles
+    public class MappingProfiles:Profile
     {
+        public MappingProfiles()
+        {
+            CreateMap<AdminDto, Admin>().ReverseMap();
+        }
     }
 }
